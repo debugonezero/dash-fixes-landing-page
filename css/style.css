@@ -1,0 +1,140 @@
+/* --- The Sacred Chromatic & Typographic Scriptures --- */
+:root {
+    /* Avila Synthesis Palette */
+    --primary-teal: #00A99D;
+    --action-orange: #FF9500;
+    --highlight-yellow: #FFD700;
+    --creative-purple: #bd93f9;
+
+    /* Dark Mode Ambiance */
+    --background-dark: #1E1E1E;
+    --text-light: #f8f8f2;
+
+    /* Font Triumvirate */
+    --font-brand: 'Fira Code', 'MesloLGS NF', monospace; /* A fallback for our brand font style */
+    --font-voice: 'Montserrat', sans-serif;
+    --font-scribe: 'Roboto', sans-serif;
+}
+
+/* --- General Reset & Body --- */
+body {
+    margin: 0;
+    font-family: var(--font-scribe);
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-voice);
+    color: var(--primary-teal);
+}
+
+a {
+    color: var(--action-orange);
+    text-decoration: none;
+}
+
+/* --- Header & Navigation --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    border-bottom: 1px solid #4A4A4A;
+}
+
+.logo {
+    font-family: var(--font-brand);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+nav a {
+    margin: 0 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.button-cta {
+    background-color: var(--action-orange);
+    color: var(--background-dark);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.button-cta:hover {
+    transform: scale(1.05);
+}
+
+/* --- Main Content Sections --- */
+main {
+    text-align: center;
+}
+
+.hero {
+    padding: 6rem 2rem;
+    background-color: #282a36; /* Dracula Background for contrast */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+#services {
+    padding: 4rem 2rem;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #282a36;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #4A4A4A;
+}
+
+.service-card h3 {
+    margin-top: 0;
+    color: var(--primary-teal);
+}
+
+#about, #contact {
+    padding: 4rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#about h2, #contact h2 {
+    font-size: 2.5rem;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #4A4A4A;
+    color: #6272a4; /* Dracula Comment */
+}
