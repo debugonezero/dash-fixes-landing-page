@@ -3,70 +3,474 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dash Fixes - Expert Repair for Students</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Dash Fixes | Campus Tech Repairs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        solarized: {
+                            dark: '#002b36',
+                            dark2: '#073642',
+                            dark3: '#586e75',
+                            light: '#fdf6e3',
+                            light2: '#eee8d5',
+                            light3: '#93a1a1',
+                            yellow: '#b58900',
+                            orange: '#cb4b16',
+                            red: '#dc322f',
+                            magenta: '#d33682',
+                            violet: '#6c71c4',
+                            blue: '#268bd2',
+                            cyan: '#2aa198',
+                            green: '#859900'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .theme-toggle {
+            transition: all 0.3s ease;
+        }
+        .dark .theme-toggle {
+            background-color: #073642;
+            color: #eee8d5;
+        }
+        .light .theme-toggle {
+            background-color: #eee8d5;
+            color: #073642;
+        }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(45deg, #268bd2, #2aa198);
+        }
+        .hero-bg {
+            background: radial-gradient(circle at 10% 20%, rgba(38, 139, 210, 0.1) 0%, rgba(253, 246, 227, 0) 50%);
+        }
+        .dark .hero-bg {
+            background: radial-gradient(circle at 10% 20%, rgba(38, 139, 210, 0.2) 0%, rgba(0, 43, 54, 0) 50%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .dark .service-card:hover {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <!-- We will place the magnificent logo here later! -->
-            Dash Fixes
+<body class="light bg-solarized-light text-solarized-dark3 font-sans transition-colors duration-300">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="py-6 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 rounded-full bg-solarized-blue flex items-center justify-center">
+                        <i data-feather="tool" class="text-solarized-light"></i>
+                    </div>
+                    <h1 class="text-2xl font-heading font-bold">
+                        <span class="gradient-text">Dash Fixes</span>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="font-medium hover:text-solarized-blue transition">Services</a>
+                    <a href="#pricing" class="font-medium hover:text-solarized-blue transition">Pricing</a>
+                    <a href="#testimonials" class="font-medium hover:text-solarized-blue transition">Testimonials</a>
+                    <a href="#contact" class="font-medium hover:text-solarized-blue transition">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <button id="themeToggle" class="theme-toggle w-10 h-10 rounded-full flex items-center justify-center">
+                        <i data-feather="sun" class="hidden dark:block"></i>
+                        <i data-feather="moon" class="block dark:hidden"></i>
+                    </button>
+                    <button class="md:hidden">
+                        <i data-feather="menu"></i>
+                    </button>
+                    <a href="#contact" class="hidden md:block px-4 py-2 bg-solarized-blue text-solarized-light rounded-lg font-medium hover:bg-opacity-90 transition">
+                        Get Help Now
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Services</a>
+                <a href="#pricing" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Pricing</a>
+                <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Contact</a>
+            </div>
         </div>
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact" class="button-cta">Get a Free Quote</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1>Expert Repair. Student Prices.</h1>
-            <p>Your On-Campus Lifeline for Laptops & Cellphones. Fast, reliable fixes to get you back to your studies in a dash.</p>
-            <a href="#contact" class="button-cta">Save My Device!</a>
-        </section>
-
-        <section id="services">
-            <h2>We Resurrect Dead Tech</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <h3>Screen Repair</h3>
-                    <p>Cracked phone, tablet, or laptop screens made pristine again.</p>
+        <!-- Hero Section -->
+        <section class="hero-bg flex-grow flex items-center py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6">
+                        Campus Tech Repairs <br>
+                        <span class="gradient-text">Done Right</span> 🚀
+                    </h2>
+                    <p class="text-lg md:text-xl text-solarized-dark3 mb-8">
+                        We fix phones, laptops, and tablets for students at prices that won't break your budget. 
+                        Fast, reliable, and campus-friendly service! 📱💻
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="px-6 py-3 bg-solarized-blue text-solarized-light rounded-lg font-medium text-center hover:bg-opacity-90 transition">
+                            Book a Repair <i data-feather="calendar" class="inline ml-2"></i>
+                        </a>
+                        <a href="#services" class="px-6 py-3 border border-solarized-blue text-solarized-blue rounded-lg font-medium text-center hover:bg-solarized-blue hover:bg-opacity-10 transition">
+                            Our Services <i data-feather="arrow-right" class="inline ml-2"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <h3>Battery Replacement</h3>
-                    <p>Breathe new life into a device that just won't hold a charge.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Performance Upgrades</h3>
-                    <p>Transform a sluggish laptop with a new SSD or more RAM.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Charging Port Fixes</h3>
-                    <p>The most common point of failure, resurrected with magnificent skill.</p>
+                <div data-aos="fade-left" class="relative">
+                    <div class="relative z-10">
+                        <img src="../graphics/hero-image.jpg" alt="A successfully repaired laptop looking like new" class="rounded-xl shadow-xl w-full">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-solarized-yellow rounded-xl opacity-20"></div>
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-solarized-blue rounded-full opacity-20"></div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2>Your Local Tech Alchemist</h2>
-            <p>With over 10 years of professional experience, I'm not just a technician; I'm your neighbor. I provide honest, transparent, and skillful repairs right here in the community, using only high-quality parts. My mission is to save you from the high cost and slow service of the big box stores.</p>
+        <!-- Services Section -->
+        <section id="services" class="py-16 px-4 sm:px-6 lg:px-8 bg-solarized-light2 dark:bg-solarized-dark2">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Our Repair Services 🛠️</h2>
+                    <p class="text-lg max-w-2xl mx-auto">We specialize in fixing all your campus tech essentials quickly and affordably.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Phone Repairs -->
+                    <div data-aos="fade-up" data-aos-delay="100" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
+                        <div class="w-16 h-16 rounded-full bg-solarized-red bg-opacity-10 flex items-center justify-center mb-6">
+                            <i data-feather="smartphone" class="text-solarized-red w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold mb-3">Phone Repairs 📱</h3>
+                        <p class="text-solarized-dark3 mb-4">Broken screens, battery issues, water damage - we've got you covered for all smartphone problems.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Screen replacements
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Battery swaps
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Charging port fixes
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Water damage recovery
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Laptop Repairs -->
+                    <div data-aos="fade-up" data-aos-delay="200" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
+                        <div class="w-16 h-16 rounded-full bg-solarized-blue bg-opacity-10 flex items-center justify-center mb-6">
+                            <i data-feather="laptop" class="text-solarized-blue w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold mb-3">Laptop Repairs 💻</h3>
+                        <p class="text-solarized-dark3 mb-4">From hardware issues to software problems, we'll get your laptop running like new again.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Virus removal
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Hardware upgrades
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Keyboard replacements
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Data recovery
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tablet Repairs -->
+                    <div data-aos="fade-up" data-aos-delay="300" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
+                        <div class="w-16 h-16 rounded-full bg-solarized-violet bg-opacity-10 flex items-center justify-center mb-6">
+                            <i data-feather="tablet" class="text-solarized-violet w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-bold mb-3">Tablet Repairs 📲</h3>
+                        <p class="text-solarized-dark3 mb-4">We repair all major tablet brands with quick turnaround times perfect for busy students.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Screen repairs
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Digitizer replacements
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Battery services
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Software troubleshooting
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Get a Free, No-Obligation Quote!</h2>
-            <p>Have a broken device? Send me a message with the details, and I'll get back to you with a quote in a dash!</p>
-            <!-- This is a simple mailto link. We can upgrade this to a form later! -->
-            <a href="mailto:your-email@dashfixes.com" class="button-cta">Email Me for a Quote</a>
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Student-Friendly Pricing 💰</h2>
+                    <p class="text-lg max-w-2xl mx-auto">Affordable repairs with student discounts available!</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Phone Repair Pricing -->
+                    <div data-aos="fade-up" data-aos-delay="100" class="bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md border-t-4 border-solarized-red">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-heading font-bold mb-2">Phone Repairs</h3>
+                            <p class="text-solarized-dark3">Starting at</p>
+                            <div class="flex items-end mt-2">
+                                <span class="text-4xl font-bold">$49</span>
+                                <span class="text-lg text-solarized-dark3 ml-1">/repair</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Screen replacement: $49-$129
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Battery replacement: $59
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Charging port: $69
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Water damage: $79+
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block w-full py-3 bg-solarized-red text-solarized-light text-center rounded-lg font-medium hover:bg-opacity-90 transition">
+                            Get Phone Help
+                        </a>
+                    </div>
+                    
+                    <!-- Laptop Repair Pricing -->
+                    <div data-aos="fade-up" data-aos-delay="200" class="bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md border-t-4 border-solarized-blue transform scale-105 z-10">
+                        <div class="absolute top-0 right-0 bg-solarized-blue text-solarized-light px-3 py-1 rounded-bl-lg rounded-tr-xl text-sm font-medium">
+                            Most Popular
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-heading font-bold mb-2">Laptop Repairs</h3>
+                            <p class="text-solarized-dark3">Starting at</p>
+                            <div class="flex items-end mt-2">
+                                <span class="text-4xl font-bold">$79</span>
+                                <span class="text-lg text-solarized-dark3 ml-1">/repair</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Virus removal: $79
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                SSD upgrade: $99+
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Keyboard: $119
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                Screen replacement: $129+
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block w-full py-3 bg-solarized-blue text-solarized-light text-center rounded-lg font-medium hover:bg-opacity-90 transition">
+                            Get Laptop Help
+                        </a>
+                    </div>
+                    
+                    <!-- Tablet Repair Pricing -->
+                    <div data-aos="fade-up" data-aos-delay="300" class="bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md border-t-4 border-solarized-violet">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-heading font-bold mb-2">Tablet Repairs</h3>
         </section>
-    </main>
 
-    <footer>
-        <p>© 2025 Dash Fixes | Your Campus Device Savior</p>
-        <p>Find us on <a href="[Your Yelp Link]">Yelp</a> & <a href="https://www.instagram.com/dash.fixes/">Instagram</a></p>
-    </footer>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8 bg-solarized-light2 dark:bg-solarized-dark2">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">What Our Customers Say ⭐</h2>
+                    <p class="text-lg max-w-2xl mx-auto">We're proud of our 5-star service.</p>
+                </div>
+                <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md">
+                        <p class="text-lg italic text-solarized-dark3 mb-6">"Came to get my Galaxy S6 Lite screen replaced. He found the piece for $35 and charged $65 for the labor. I recommend their services if you're in need."</p>
+                        <div class="text-right font-medium">
+                            - David C.
+                        </div>
+                    </div>
+                    <div class="text-center mt-12">
+                        <a href="https://www.yelp.com/biz/dash-fixes-pasadena" target="_blank" rel="noopener noreferrer" class="px-6 py-3 border border-solarized-blue text-solarized-blue rounded-lg font-medium text-center hover:bg-solarized-blue hover:bg-opacity-10 transition">
+                            Read More Reviews on Yelp <i data-feather="external-link" class="inline ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Get a Free Quote 📬</h2>
+                    <p class="text-lg max-w-2xl mx-auto">Have a broken device? Fill out the form, and I'll get back to you in a dash!</p>
+                </div>
+                <div class="max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Name</label>
+                            <input type="text" name="name" id="name" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Email</label>
+                            <input type="email" name="_replyto" id="email" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">What's Wrong?</label>
+                            <textarea name="message" id="message" rows="4" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full px-6 py-3 bg-solarized-blue text-solarized-light rounded-lg font-medium text-center hover:bg-opacity-90 transition">
+                                Send Request
+                            </button>
+                        </div>
+                    </form>
+                    <div id="form-status" class="mt-6 text-center font-medium"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-solarized-light2 dark:bg-solarized-dark2">
+            <div class="max-w-7xl mx-auto text-center text-solarized-dark3 dark:text-solarized-light3">
+                <p>&copy; 2025 Dash Fixes | Your Campus Device Savior</p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="https://www.yelp.com/biz/dash-fixes-pasadena" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.396 1.018a.33.33 0 0 0-.33.275l-3.39 8.96-8.397.22a.33.33 0 0 0-.275.55l6.539 5.29-2.16 8.62a.33.33 0 0 0 .475.36l7.42-4.55 7.42 4.55a.33.33 0 0 0 .476-.36l-2.16-8.62 6.54-5.29a.33.33 0 0 0-.276-.55l-8.396-.22-3.39-8.96a.33.33 0 0 0-.33-.274z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/dash.fixes/" class="hover:text-solarized-blue"><i data-feather="instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61580755575702&mibextid=wwXIfr" class="hover:text-solarized-blue"><i data-feather="facebook"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // AOS initialization
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+
+            // Feather Icons initialization
+            feather.replace();
+            feather.replace({'data-feather': 'laptop'}); // Failsafe for laptop icon
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Theme Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+
+            // Check for saved theme preference
+            if (localStorage.getItem('theme') === 'dark') {
+                body.classList.add('dark');
+                body.classList.remove('light');
+            }
+
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark');
+                body.classList.toggle('light');
+                // Save theme preference
+                if (body.classList.contains('dark')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+
+            // Formspree submission handler
+            const form = document.getElementById('contact-form');
+            const formStatus = document.getElementById('form-status');
+
+            async function handleSubmit(event) {
+                event.preventDefault();
+                const data = new FormData(event.target);
+                try {
+                    const response = await fetch("https://formspree.io/f/xkgvaqde", {
+                        method: 'POST',
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    if (response.ok) {
+                        formStatus.textContent = "Thanks! I'll get back to you in a dash.";
+                        formStatus.className = 'mt-6 text-center font-medium text-solarized-green';
+                        form.reset();
+                    } else {
+                        const responseData = await response.json();
+                        if (Object.hasOwn(responseData, 'errors')) {
+                            formStatus.textContent = responseData["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            formStatus.textContent = "Oops! There was a problem submitting your form.";
+                        }
+                        formStatus.className = 'mt-6 text-center font-medium text-solarized-red';
+                    }
+                } catch (error) {
+                    formStatus.textContent = "Oops! There was a problem submitting your form.";
+                    formStatus.className = 'mt-6 text-center font-medium text-solarized-red';
+                }
+            }
+            form.addEventListener("submit", handleSubmit);
+        });
+    </script>
 </body>
 </html>
