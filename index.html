@@ -43,6 +43,18 @@
         }
     </script>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            /* Add a subtle background blur for modern browsers */
+            @supports (backdrop-filter: blur(10px)) {
+                backdrop-filter: blur(10px);
+            }
+        }
         .theme-toggle {
             transition: all 0.3s ease;
         }
@@ -173,8 +185,8 @@
         <header class="py-6 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto flex justify-between items-center">
                 <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 rounded-full bg-solarized-blue flex items-center justify-center">
-                        <i data-feather="tool" class="text-solarized-light"></i>
+                    <div class="w-10 h-10">
+                        <img src="graphics/logo.svg" alt="Dash Fixes Logo" class="w-full h-full">
                     </div>
                     <h1 class="text-2xl font-heading font-bold">
                         <span class="gradient-text">Dash Fixes</span>
