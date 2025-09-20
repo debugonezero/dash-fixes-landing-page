@@ -207,7 +207,7 @@
                         <i data-feather="sun" class="hidden dark:block"></i>
                         <i data-feather="moon" class="block dark:hidden"></i>
                     </button>
-                    <button class="md:hidden">
+                    <button id="mobileMenuButton" class="md:hidden">
                         <i data-feather="menu"></i>
                     </button>
                     <a href="#contact" class="hidden md:block px-4 py-2 bg-solarized-blue text-solarized-light rounded-lg font-medium hover:bg-opacity-90 transition">
@@ -668,7 +668,7 @@
             feather.replace({'data-feather': 'laptop'}); // Failsafe for laptop icon
 
             // Mobile Menu Toggle
-            const mobileMenuButton = document.querySelector('.md\:hidden');
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
