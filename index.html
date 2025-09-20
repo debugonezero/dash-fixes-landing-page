@@ -674,25 +674,34 @@
                 mobileMenu.classList.toggle('hidden');
             });
 
-            // Theme Toggle
+            // Theme Toggle Logic - CORRECTED
             const themeToggle = document.getElementById('themeToggle');
             const body = document.body;
 
-            // Check for saved theme preference
-            if (localStorage.getItem('theme') === 'dark') {
-                body.classList.add('dark');
-                body.classList.remove('light');
+            // Function to apply the theme
+            const applyTheme = (isDark) => {
+                if (isDark) {
+                    body.classList.add('dark');
+                } else {
+                    body.classList.remove('dark');
+                }
+            };
+
+            // Check for saved theme in localStorage, or use system preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                applyTheme(savedTheme === 'dark');
+            } else {
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                applyTheme(prefersDark);
             }
 
+            // Event listener for the button
             themeToggle.addEventListener('click', () => {
-                body.classList.toggle('dark');
-                body.classList.toggle('light');
-                // Save theme preference
-                if (body.classList.contains('dark')) {
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    localStorage.setItem('theme', 'light');
-                }
+                const isCurrentlyDark = body.classList.contains('dark');
+                applyTheme(!isCurrentlyDark);
+                // Save the new preference
+                localStorage.setItem('theme', !isCurrentlyDark ? 'dark' : 'light');
             });
 
             // Formspree submission handler
