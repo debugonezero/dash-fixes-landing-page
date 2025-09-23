@@ -7,11 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/simple-icons.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -212,7 +211,7 @@
             <div class="max-w-7xl mx-auto flex justify-between items-center">
                 <div class="flex items-center space-x-2">
                     <div class="w-10 h-10 rounded-full bg-solarized-blue flex items-center justify-center">
-                        <i data-feather="tool" class="text-solarized-light"></i>
+                        <i class="fa-solid fa-wrench text-solarized-light"></i>
                     </div>
                     <h1 class="text-2xl font-heading font-bold">
                         <span class="gradient-text">Dash Fixes</span>
@@ -226,15 +225,15 @@
                 </nav>
                 <div class="flex items-center space-x-4">
                     <a href="tel:626-622-0196" class="hidden md:flex items-center font-medium hover:text-solarized-blue transition">
-                        <i data-feather="phone" aria-hidden="true" class="w-4 h-4 mr-2"></i>
+                        <i class="fa-solid fa-phone w-4 h-4 mr-2"></i>
                         (626) 622-0196
                     </a>
                     <button id="themeToggle" aria-label="Toggle theme" class="theme-toggle w-10 h-10 rounded-full flex items-center justify-center">
-                        <i data-feather="sun" class="hidden dark:block"></i>
-                        <i data-feather="moon" class="block dark:hidden"></i>
+                        <i class="fa-solid fa-sun hidden dark:block"></i>
+                        <i class="fa-solid fa-moon block dark:hidden"></i>
                     </button>
                     <button id="mobileMenuButton" aria-label="Open navigation menu" class="md:hidden">
-                        <i data-feather="menu"></i>
+                        <i class="fa-solid fa-bars"></i>
                     </button>
                     <a href="#contact" class="hidden md:block px-4 py-2 bg-solarized-blue text-solarized-light rounded-lg font-medium hover:bg-opacity-90 transition">
                         Get Help Now
@@ -266,10 +265,10 @@
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="#contact" class="px-6 py-3 bg-solarized-blue text-solarized-light rounded-lg font-medium text-center hover:bg-opacity-90 transition">
-                            Book a Repair <i data-feather="calendar" aria-hidden="true" class="inline ml-2"></i>
+                            Book a Repair <i class="fa-solid fa-calendar-check inline ml-2"></i>
                         </a>
                         <a href="#services" class="px-6 py-3 border border-solarized-blue text-solarized-blue rounded-lg font-medium text-center hover:bg-solarized-blue hover:bg-opacity-10 transition">
-                            Our Services <i data-feather="arrow-right" aria-hidden="true" class="inline ml-2"></i>
+                            Our Services <i class="fa-solid fa-arrow-right inline ml-2"></i>
                         </a>
                     </div>
                 </div>
@@ -297,25 +296,25 @@
                     <!-- Phone Repairs -->
                     <div data-aos="fade-up" data-aos-delay="100" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
                         <div class="w-16 h-16 rounded-full bg-solarized-red bg-opacity-10 flex items-center justify-center mb-6">
-                            <i data-feather="smartphone" aria-hidden="true" class="text-solarized-red w-8 h-8"></i>
+                            <i class="fa-solid fa-mobile-screen-button text-solarized-red w-8 h-8"></i>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Phone Repairs 📱</h3>
                         <p class="text-solarized-dark3 mb-4">Broken screens, battery issues, water damage - we've got you covered for all smartphone problems.</p>
                         <ul class="space-y-2">
                             <li class="flex items-center">
-                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Screen replacements
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Battery swaps
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Charging port fixes
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Water damage recovery
                             </li>
                         </ul>
@@ -324,25 +323,25 @@
                     <!-- Laptop Repairs -->
                     <div data-aos="fade-up" data-aos-delay="200" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
                         <div class="w-16 h-16 rounded-full bg-solarized-blue bg-opacity-10 flex items-center justify-center mb-6">
-                            <i data-feather="monitor" aria-hidden="true" class="text-solarized-blue w-8 h-8"></i>
+                            <i class="fa-solid fa-laptop text-solarized-blue w-8 h-8"></i>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Laptop Repairs 💻</h3>
                         <p class="text-solarized-dark3 mb-4">From hardware issues to software problems, we'll get your laptop running like new again.</p>
                         <ul class="space-y-2">
                             <li class="flex items-center">
-                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Virus removal
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Hardware upgrades
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Keyboard replacements
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Data recovery
                             </li>
                         </ul>
@@ -351,21 +350,21 @@
                     <!-- Mail-in Repairs -->
                     <div data-aos="fade-up" data-aos-delay="400" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
                         <div class="w-16 h-16 rounded-full bg-solarized-green bg-opacity-10 flex items-center justify-center mb-6">
-                            <i data-feather="package" aria-hidden="true" class="text-solarized-green w-8 h-8"></i>
+                            <i class="fa-solid fa-box-open text-solarized-green w-8 h-8"></i>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Mail-in Repairs 📦</h3>
                         <p class="text-solarized-dark3 mb-4">Not on campus? No problem! Securely mail your device to us from anywhere in the country.</p>
                         <ul class="space-y-2">
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Get a free quote online
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Securely mail your device
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 We repair and ship it back fast
                             </li>
                         </ul>
@@ -374,25 +373,25 @@
                     <!-- Game Console Repairs -->
                     <div data-aos="fade-up" data-aos-delay="500" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
                         <div class="w-16 h-16 rounded-full bg-solarized-cyan bg-opacity-10 flex items-center justify-center mb-6">
-                            <i data-feather="gamepad" aria-hidden="true" class="text-solarized-cyan w-8 h-8"></i>
+                            <i class="fa-solid fa-gamepad text-solarized-cyan w-8 h-8"></i>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Game Console Repairs 🎮</h3>
                         <p class="text-solarized-dark3 mb-4">From overheating PS5s to sticky controller buttons, we'll get you back in the game.</p>
                         <ul class="space-y-2">
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 HDMI Port Repair
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Internal Cleaning & Overheating
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Thermal Paste Replacement
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Controller Repair (Stick Drift, etc.)
                             </li>
                         </ul>
@@ -481,23 +480,23 @@
                         </div>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Screen Replacement: $129+
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 SSD Upgrade / Replacement: $99+
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Data Recovery: $99+
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Performance Optimization: $79+
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Keyboard & DC Jack Repair: $89+
                             </li>
                         </ul>
@@ -518,23 +517,23 @@
                         </div>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 HDMI Port Repair: $99+
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Internal Cleaning: $59+
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Thermal Paste Replacement: $79+
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Controller Repair: $39+
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Other Issues: Quote
                             </li>
                         </ul>
@@ -555,23 +554,23 @@
                         </div>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Custom Tablet Repairs
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Smartwatch Screen & Battery
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 Drone & Controller Fixes
                             </li>
                             <li class="flex items-center">
-                                <i data-feather="check" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-check text-solarized-green mr-2"></i>
                                 And much more...
                             </li>
                              <li class="flex items-center">
-                                <i data-feather="help-circle" aria-hidden="true" class="w-4 h-4 text-solarized-green mr-2"></i>
+                                <i class="fa-solid fa-question-circle text-solarized-green mr-2"></i>
                                 If it has a battery, ask us!
                             </li>
                         </ul>
@@ -587,7 +586,7 @@
         <section id="disclaimer" class="py-16 px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
                 <div class="w-16 h-16 rounded-full bg-solarized-orange bg-opacity-10 flex items-center justify-center mb-6 mx-auto">
-                    <i data-feather="alert-triangle" aria-hidden="true" class="text-solarized-orange w-8 h-8"></i>
+                    <i class="fa-solid fa-triangle-exclamation text-solarized-orange w-8 h-8"></i>
                 </div>
                 <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">An Important Note for iPhone Owners</h2>
                 <p class="text-lg text-solarized-dark3 dark:text-solarized-light3">
@@ -607,39 +606,39 @@
                     <!-- Aftermarket Incell -->
                     <div data-aos="fade-up" data-aos-delay="100" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
                         <div class="w-16 h-16 rounded-full bg-solarized-red bg-opacity-10 flex items-center justify-center mb-6">
-                            <i data-feather="dollar-sign" aria-hidden="true" class="text-solarized-red w-8 h-8"></i>
+                            <i class="fa-solid fa-dollar-sign text-solarized-red w-8 h-8"></i>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Aftermarket Incell</h3>
                         <p class="text-solarized-dark3 mb-4">The most budget-friendly option to get your device back up and running.</p>
                         <ul class="space-y-2 text-left">
-                            <li class="flex items-start"><i data-feather="check" class="w-4 h-4 text-solarized-green mr-2 mt-1"></i><strong>Best For:</strong> Data recovery, temporary fixes, or budget-conscious trade-ins.</li>
-                            <li class="flex items-start"><i data-feather="alert-circle" class="w-4 h-4 text-solarized-orange mr-2 mt-1"></i><strong>Keep in Mind:</strong> Colors and brightness may differ slightly from the original screen.</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-solarized-green mr-2 mt-1"></i><strong>Best For:</strong> Data recovery, temporary fixes, or budget-conscious trade-ins.</li>
+                            <li class="flex items-start"><i class="fa-solid fa-circle-info text-solarized-orange mr-2 mt-1"></i><strong>Keep in Mind:</strong> Colors and brightness may differ slightly from the original screen.</li>
                         </ul>
                     </div>
                     
                     <!-- Aftermarket OLED -->
                     <div data-aos="fade-up" data-aos-delay="200" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300 border-t-4 border-solarized-blue">
                         <div class="w-16 h-16 rounded-full bg-solarized-blue bg-opacity-10 flex items-center justify-center mb-6">
-                            <i data-feather="star" aria-hidden="true" class="text-solarized-blue w-8 h-8"></i>
+                            <i class="fa-solid fa-star text-solarized-blue w-8 h-8"></i>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Aftermarket OLED (Most Popular)</h3>
                         <p class="text-solarized-dark3 mb-4">The perfect balance of exceptional quality and great value, closely matching the original display.</p>
                         <ul class="space-y-2 text-left">
-                            <li class="flex items-start"><i data-feather="check" class="w-4 h-4 text-solarized-green mr-2 mt-1"></i><strong>Best For:</strong> Everyday use for customers who want a high-quality repair without the premium price of a genuine part.</li>
-                            <li class="flex items-start"><i data-feather="alert-circle" class="w-4 h-4 text-solarized-orange mr-2 mt-1"></i><strong>Keep in Mind:</strong> Offers a vibrant and reliable display that is nearly indistinguishable from the original.</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-solarized-green mr-2 mt-1"></i><strong>Best For:</strong> Everyday use for customers who want a high-quality repair without the premium price of a genuine part.</li>
+                            <li class="flex items-start"><i class="fa-solid fa-circle-info text-solarized-orange mr-2 mt-1"></i><strong>Keep in Mind:</strong> Offers a vibrant and reliable display that is nearly indistinguishable from the original.</li>
                         </ul>
                     </div>
                     
                     <!-- Genuine -->
                     <div data-aos="fade-up" data-aos-delay="300" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
                         <div class="w-16 h-16 rounded-full bg-solarized-violet bg-opacity-10 flex items-center justify-center mb-6">
-                            <i data-feather="award" aria-hidden="true" class="text-solarized-violet w-8 h-8"></i>
+                            <i class="fa-solid fa-award text-solarized-violet w-8 h-8"></i>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Genuine / Refurbished</h3>
                         <p class="text-solarized-dark3 mb-4">The highest quality available, restoring your device to its original factory state.</p>
                         <ul class="space-y-2 text-left">
-                            <li class="flex items-start"><i data-feather="check" class="w-4 h-4 text-solarized-green mr-2 mt-1"></i><strong>Best For:</strong> Customers who demand perfect color accuracy and original performance.</li>
-                            <li class="flex items-start"><i data-feather="alert-circle" class="w-4 h-4 text-solarized-orange mr-2 mt-1"></i><strong>Keep in Mind:</strong> This is the premium option. The Apple serialization message may still appear.</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-solarized-green mr-2 mt-1"></i><strong>Best For:</strong> Customers who demand perfect color accuracy and original performance.</li>
+                            <li class="flex items-start"><i class="fa-solid fa-circle-info text-solarized-orange mr-2 mt-1"></i><strong>Keep in Mind:</strong> This is the premium option. The Apple serialization message may still appear.</li>
                         </ul>
                     </div>
                 </div>
@@ -680,11 +679,11 @@
                     <p class="text-lg max-w-2xl mx-auto">Have a broken device? Fill out the form below, or give us a call!</p>
                     <div class="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
                         <a href="tel:626-622-0196" class="text-2xl font-heading font-bold inline-flex items-center hover:text-solarized-blue transition">
-                            <i data-feather="phone-call" aria-hidden="true" class="w-6 h-6 mr-3"></i>
+                            <i class="fa-solid fa-phone-volume w-6 h-6 mr-3"></i>
                             (626) 622-0196
                         </a>
                         <a href="mailto:web@dashfixes.com" class="text-2xl font-heading font-bold inline-flex items-center hover:text-solarized-blue transition">
-                            <i data-feather="mail" aria-hidden="true" class="w-6 h-6 mr-3"></i>
+                            <i class="fa-solid fa-envelope w-6 h-6 mr-3"></i>
                             web@dashfixes.com
                         </a>
                     </div>
@@ -720,26 +719,24 @@
                 <p>&copy; 2025 Dash Fixes | Crafted with love <span style="color: var(--action-orange);">❤️</span> by your local Tech Alchemist! 🧪</p>
                 <div class="mt-4 flex justify-center space-x-6">
                     <a href="https://www.yelp.com/biz/dash-fixes-pasadena" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our Yelp page">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"><title>Yelp</title><path d="M9.362 2.5a10.12 10.12 0 0 0-4.03 1.012c-.69.348-.593 1.33.14 1.5l3.94 1.013a.53.53 0 0 1 .42.66L7.24 12.84c-.21.69.59 1.28.99 1.28.21 0 .4-.09.56-.25l3.28-3.85a.53.53 0 0 1 .88.14l.19 5.19c.03.84 1.1.99 1.86.75l-.02-.01zm.36-1.51a11.63 11.63 0 0 1 5.26 1.41c.81.31 1.25 1.34.81 2.06l-2.9 4.31c-.42.63.14 1.48.88 1.48.34 0 .66-.2.85-.5l2.76-4.41a1.07 1.07 0 0 1 1.59.26 9.32 9.32 0 0 1 2.47 3.17c.38.78-.14 1.71-.99 1.87l-4.94 1.61c-.9.29-1.28-1.03-.6-1.87l2.76-4.41a.53.53 0 0 0-.8-.66l-4.94 1.61c-.9.29-1.28-1.03-.6-1.87l3.28-3.85a1.07 1.07 0 0 0-.47-1.53 11.63 11.63 0 0 0-5.26-1.41c-.81-.31-1.25-1.34-.81-2.06l2.9-4.31c.42-.63-.14-1.48-.88-1.48h-.01z"/></svg>
+                        <i class="fa-brands fa-yelp w-6 h-6"></i>
                     </a>
                     <a href="https://wa.me/16266220196" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Contact us on WhatsApp">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"><title>WhatsApp</title><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.38 1.25 4.82l-1.34 4.91 5.04-1.32c1.39.73 2.96 1.14 4.59 1.14h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.91-9.91zM17.46 14.85c-.21.12-.75.37-1.03.21-.28-.16-1.15-.54-1.32-.6-.17-.06-.3-.06-.42.06-.12.12-.48.6-.59.72-.11.12-.22.13-.41.07-.19-.06-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.05-.61.06-.13.12-.21.18-.33.06-.12.03-.21 0-.33-.03-.12-.42-1-.57-1.37-.15-.37-.3-.32-.41-.32h-.18c-.11 0-.28.03-.42.15-.14.12-.54.51-.54 1.24 0 .73.55 1.44.63 1.54.08.1 1.09 1.67 2.65 2.33.38.16.68.26.91.33.4.13.77.11.97.07.25-.05.75-.31.86-.61.11-.3.11-.56.08-.61-.03-.06-.15-.09-.33-.21z"/></svg>
+                        <i class="fa-brands fa-whatsapp w-6 h-6"></i>
                     </a>
                     <a href="https://www.tiktok.com/@dashfixes" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our TikTok page">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"><title>TikTok</title><path d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.43.05-4.84-.95-6.43-2.88-1.59-1.92-2.32-4.42-2.1-6.84.22-2.46 1.1-4.8 2.73-6.58 1.63-1.78 3.91-2.79 6.23-2.96.02-.25.01-.5.01-.75.01-1.99-.01-3.98-.01-5.97h3.91z"/></svg>
+                        <i class="fa-brands fa-tiktok w-6 h-6"></i>
                     </a>
                     <a href="https://www.youtube.com/@DashFixes" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our YouTube channel">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <i class="fa-brands fa-youtube w-6 h-6"></i>
                     </a>
                     <a href="https://www.instagram.com/dash.fixes/" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our Instagram page">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.74 0 12s.015 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.014 15.26 0 12 0zm0 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+                        <i class="fa-brands fa-instagram w-6 h-6"></i>
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=61580755575702" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our Facebook page">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6"><title>Facebook</title><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                        <i class="fa-brands fa-facebook w-6 h-6"></i>
                     </a>
                 </div>
-            </div>
-        </footer>
             </div>
         </footer>
     </div>
@@ -750,11 +747,6 @@
                 duration: 800,
                 once: true
             });
-
-            // Feather Icons initialization
-            feather.replace();
-            feather.replace({'data-feather': 'monitor'}); // Failsafe for laptop icon
-            feather.replace({'data-feather': 'gamepad'}); // Failsafe for console icon
 
             // Mobile Menu Toggle
             const mobileMenuButton = document.getElementById('mobileMenuButton');
