@@ -80,7 +80,7 @@
         }
     </style>
 </head>
-<body class="light bg-solarized-light text-solarized-dark3 dark:bg-solarized-dark dark:text-solarized-light2 font-sans transition-colors duration-300">
+<body class="light bg-solarized-light text-solarized-dark3 font-sans transition-colors duration-300">
     <div class="min-h-screen flex flex-col">
         <!-- Header -->
         <header class="py-6 px-4 sm:px-6 lg:px-8">
@@ -104,10 +104,10 @@
                         <i class="fa-solid fa-phone w-4 h-4 mr-2"></i>
                         (626) 622-0196
                     </a>
-                    <button id="themeToggle" aria-label="Toggle theme" class="theme-toggle w-10 h-10 rounded-full flex items-center justify-center">
+                    <!-- <button id="themeToggle" aria-label="Toggle theme" class="theme-toggle w-10 h-10 rounded-full flex items-center justify-center">
                         <i class="fa-solid fa-sun hidden dark:block"></i>
                         <i class="fa-solid fa-moon block dark:hidden"></i>
-                    </button>
+                    </button> -->
                     <button id="mobileMenuButton" aria-label="Open navigation menu" class="md:hidden">
                         <i class="fa-solid fa-bars"></i>
                     </button>
@@ -315,6 +315,7 @@
                 mobileMenu.classList.toggle('hidden');
             });
 
+            /*
             const themeToggle = document.getElementById('themeToggle');
             const body = document.body;
 
@@ -339,6 +340,7 @@
                 applyTheme(!isCurrentlyDark);
                 localStorage.setItem('theme', !isCurrentlyDark ? 'dark' : 'light');
             });
+            */
 
             // Generic Formspree handler
             async function handleFormSubmit(event, formId, statusId, successMessage) {

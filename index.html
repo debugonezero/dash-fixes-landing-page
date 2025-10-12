@@ -234,7 +234,7 @@
       gtag('config', 'G-WTJ1VLTLF2');
     </script>
 </head>
-<body class="light bg-solarized-light text-solarized-dark3 dark:bg-solarized-dark dark:text-solarized-light2 font-sans transition-colors duration-300">
+<body class="light bg-solarized-light text-solarized-dark3 font-sans transition-colors duration-300">
     <div class="min-h-screen flex flex-col">
         <!-- Header -->
         <header class="py-6 px-4 sm:px-6 lg:px-8">
@@ -259,10 +259,10 @@
                         <i class="fa-solid fa-phone w-4 h-4 mr-2"></i>
                         (626) 622-0196
                     </a>
-                    <button id="themeToggle" aria-label="Toggle theme" class="theme-toggle w-10 h-10 rounded-full flex items-center justify-center">
+                    <!-- <button id="themeToggle" aria-label="Toggle theme" class="theme-toggle w-10 h-10 rounded-full flex items-center justify-center">
                         <i class="fa-solid fa-sun hidden dark:block"></i>
                         <i class="fa-solid fa-moon block dark:hidden"></i>
-                    </button>
+                    </button> -->
                     <button id="mobileMenuButton" aria-label="Open navigation menu" class="md:hidden">
                         <i class="fa-solid fa-bars"></i>
                     </button>
@@ -313,6 +313,48 @@
                     </div>
                     <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-solarized-yellow rounded-xl opacity-20"></div>
                     <div class="absolute -top-6 -left-6 w-24 h-24 bg-solarized-blue rounded-full opacity-20"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Get a Free Quote 📬</h2>
+                    <p class="text-lg max-w-2xl mx-auto">Have a broken device? Fill out the form below, or give us a call!</p>
+                    <div class="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+                        <a href="tel:626-622-0196" class="text-2xl font-heading font-bold inline-flex items-center hover:text-solarized-blue transition">
+                            <i class="fa-solid fa-phone-volume w-6 h-6 mr-3"></i>
+                            (626) 622-0196
+                        </a>
+                        <a href="mailto:web@dashfixes.com" class="text-2xl font-heading font-bold inline-flex items-center hover:text-solarized-blue transition">
+                            <i class="fa-solid fa-envelope w-6 h-6 mr-3"></i>
+                            web@dashfixes.com
+                        </a>
+                    </div>
+                </div>
+                <div class="max-w-2xl mx-auto mt-12" data-aos="fade-up" data-aos-delay="100">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Name</label>
+                            <input type="text" name="name" id="name" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Email</label>
+                            <input type="email" name="_replyto" id="email" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">What's Wrong?</label>
+                            <textarea name="message" id="message" rows="4" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full px-6 py-3 bg-solarized-blue text-solarized-light rounded-lg font-medium text-center hover:bg-opacity-90 transition">
+                                Send Request
+                            </button>
+                        </div>
+                    </form>
+                    <div id="form-status" class="mt-6 text-center font-medium"></div>
                 </div>
             </div>
         </section>
@@ -382,7 +424,7 @@
                     <!-- Mail-in Repairs -->
                     <div data-aos="fade-up" data-aos-delay="400" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
                         <div class="w-16 h-16 rounded-full bg-solarized-green bg-opacity-10 flex items-center justify-center mb-6">
-                            <svg xmlns="http://www.w.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-solarized-green"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-solarized-green"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Mail-in Repairs 📦</h3>
                         <p class="text-solarized-dark3 mb-4">Not on campus? No problem! Securely mail your device to us from anywhere in the country.</p>
@@ -405,7 +447,7 @@
                     <!-- Game Console Repairs -->
                     <div data-aos="fade-up" data-aos-delay="500" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
                         <div class="w-16 h-16 rounded-full bg-solarized-cyan bg-opacity-10 flex items-center justify-center mb-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-solarized-cyan"><line x1="6" x2="10" y1="12" y2="12"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="15" x2="15.01" y1="13" y2="13"></line><line x1="18" x2="18.01" y1="11" y2="11"></line><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.01.152v0a4.002 4.002 0 0 0 3.5 3.998l.05.002h10.558l.05-.002a4.002 4.002 0 0 0 3.5-3.998v0c0-.05-.005-.1-.01-.152A4 4 0 0 0 17.32 5Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-solarized-cyan"><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.01.152v0a4.002 4.002 0 0 0 3.5 3.998l.05.002h10.558l.05-.002a4.002 4.002 0 0 0 3.5-3.998v0c0-.05-.005-.1-.01-.152A4 4 0 0 0 17.32 5Z"></path><line x1="6" x2="10" y1="12" y2="12"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="15" x2="15.01" y1="13" y2="13"></line><line x1="18" x2="18.01" y1="11" y2="11"></line></svg>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Game Console Repairs 🎮</h3>
                         <p class="text-solarized-dark3 mb-4">From overheating PS5s to sticky controller buttons, we'll get you back in the game.</p>
@@ -711,48 +753,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Get a Free Quote 📬</h2>
-                    <p class="text-lg max-w-2xl mx-auto">Have a broken device? Fill out the form below, or give us a call!</p>
-                    <div class="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
-                        <a href="tel:626-622-0196" class="text-2xl font-heading font-bold inline-flex items-center hover:text-solarized-blue transition">
-                            <i class="fa-solid fa-phone-volume w-6 h-6 mr-3"></i>
-                            (626) 622-0196
-                        </a>
-                        <a href="mailto:web@dashfixes.com" class="text-2xl font-heading font-bold inline-flex items-center hover:text-solarized-blue transition">
-                            <i class="fa-solid fa-envelope w-6 h-6 mr-3"></i>
-                            web@dashfixes.com
-                        </a>
-                    </div>
-                </div>
-                <div class="max-w-2xl mx-auto mt-12" data-aos="fade-up" data-aos-delay="100">
-                    <form id="contact-form" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Name</label>
-                            <input type="text" name="name" id="name" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Email</label>
-                            <input type="email" name="_replyto" id="email" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">What's Wrong?</label>
-                            <textarea name="message" id="message" rows="4" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="w-full px-6 py-3 bg-solarized-blue text-solarized-light rounded-lg font-medium text-center hover:bg-opacity-90 transition">
-                                Send Request
-                            </button>
-                        </div>
-                    </form>
-                    <div id="form-status" class="mt-6 text-center font-medium"></div>
-                </div>
-            </div>
-        </section>
-
         <!-- Footer -->
         <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-solarized-light2 dark:bg-solarized-dark2">
             <div class="max-w-7xl mx-auto text-center text-solarized-dark3 dark:text-solarized-light3">
@@ -796,6 +796,7 @@
             });
 
             // Theme Toggle Logic - CORRECTED
+            /*
             const themeToggle = document.getElementById('themeToggle');
             const body = document.body;
 
@@ -824,6 +825,7 @@
                 // Save the new preference
                 localStorage.setItem('theme', !isCurrentlyDark ? 'dark' : 'light');
             });
+            */
 
             // Formspree submission handler
             const form = document.getElementById('contact-form');
