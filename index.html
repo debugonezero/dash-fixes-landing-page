@@ -10,83 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        solarized: {
-                            dark: '#002b36',
-                            dark2: '#073642',
-                            dark3: '#586e75',
-                            light: '#fdf6e3',
-                            light2: '#eee8d5',
-                            light3: '#93a1a1',
-                            yellow: '#b58900',
-                            orange: '#cb4b16',
-                            red: '#dc322f',
-                            magenta: '#d33682',
-                            violet: '#6c71c4',
-                            blue: '#268bd2',
-                            cyan: '#2aa198',
-                            green: '#859900'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Space Grotesk', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .header {
-            position: sticky;
-            top: 0;
-            z-index: 50;
-            /* Add a subtle background blur for modern browsers */
-            @supports (backdrop-filter: blur(10px)) {
-                backdrop-filter: blur(10px);
-            }
-        }
-        .theme-toggle {
-            transition: all 0.3s ease;
-        }
-        .dark .theme-toggle {
-            background-color: #073642;
-            color: #eee8d5;
-        }
-        .light .theme-toggle {
-            background-color: #eee8d5;
-            color: #073642;
-        }
-        .gradient-text {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(45deg, #268bd2, #2aa198);
-        }
-        .hero-bg {
-            background: radial-gradient(circle at 10% 20%, rgba(38, 139, 210, 0.1) 0%, rgba(253, 246, 227, 0) 50%);
-        }
-        .dark .hero-bg {
-            background: radial-gradient(circle at 10% 20%, rgba(38, 139, 210, 0.2) 0%, rgba(0, 43, 54, 0) 50%);
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        .dark .service-card:hover {
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-        }
-    </style>
+    <script src="js/main.js" defer></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -382,7 +308,7 @@
                     <!-- Mail-in Repairs -->
                     <div data-aos="fade-up" data-aos-delay="400" class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
                         <div class="w-16 h-16 rounded-full bg-solarized-green bg-opacity-10 flex items-center justify-center mb-6">
-                            <svg xmlns="http://www.w.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-solarized-green"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-solarized-green"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                         </div>
                         <h3 class="text-xl font-heading font-bold mb-3">Mail-in Repairs 📦</h3>
                         <p class="text-solarized-dark3 mb-4">Not on campus? No problem! Securely mail your device to us from anywhere in the country.</p>
@@ -467,6 +393,9 @@
         <section id="pricing" class="py-16 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Transparent Pricing 💰</h2>
+                    <p class="text-lg max-w-2xl mx-auto">Fair, upfront costs for all our repair services. No hidden fees.</p>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Phone Repair Pricing -->
                     <div data-aos="fade-up" data-aos-delay="100" class="bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md border-t-4 border-solarized-red transform scale-105 z-10">

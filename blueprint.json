@@ -1,28 +1,72 @@
 {
   "business_name": "Dash Fixes",
-  "mission": "To provide fast, affordable, and reliable tech repair services for students and the local community.",
+  "mission": "To provide fast, affordable, and reliable tech repair services for students and the local community, and mail-in repairs.",
   "phases": [
     {
       "name": "Phase 1: Landing Page Foundation",
       "status": "Completed",
       "tasks": [
-        { "id": "task_001", "description": "Create initial HTML structure", "status": "Completed" },
-        { "id": "task_002", "description": "Style with Tailwind CSS via CDN", "status": "Completed" },
-        { "id": "task_003", "description": "Implement dark mode", "status": "Completed" },
-        { "id": "task_004", "description": "Add contact form", "status": "Completed" },
-        { "id": "task_005", "description": "Fix icon display issues and switch to SVGs", "status": "Completed" }
+        {
+          "id": "task_001",
+          "description": "Create initial HTML structure",
+          "status": "Completed"
+        },
+        {
+          "id": "task_002",
+          "description": "Style with Tailwind CSS via CDN",
+          "status": "Completed"
+        },
+        {
+          "id": "task_003",
+          "description": "Implement dark mode",
+          "status": "Completed"
+        },
+        {
+          "id": "task_004",
+          "description": "Add contact form",
+          "status": "Completed"
+        },
+        {
+          "id": "task_005",
+          "description": "Fix icon display issues and switch to SVGs",
+          "status": "Completed"
+        }
       ]
     },
     {
       "name": "Phase 2: Professional Build Setup & Next.js Migration Prep",
       "status": "Planned",
       "tasks": [
-        { "id": "task_006", "description": "User: Set up a clean development environment on a separate machine (iMac) and clone the repository.", "status": "Pending" },
-        { "id": "task_007", "description": "Prism: Initialize npm and install Tailwind CSS, PostCSS, and Autoprefixer.", "status": "Pending" },
-        { "id": "task_008", "description": "Prism: Create and configure `tailwind.config.js` and `postcss.config.js`.", "status": "Pending" },
-        { "id": "task_009", "description": "Prism: Add a build script to `package.json` to compile a production-ready CSS file.", "status": "Pending" },
-        { "id": "task_010", "description": "Prism: Replace the Tailwind CDN script in `index.html` with the compiled CSS file.", "status": "Pending" },
-        { "id": "task_011", "description": "Future Goal: Migrate the project to Next.js for enhanced performance and features.", "status": "Planned" }
+        {
+          "id": "task_006",
+          "description": "User: Set up a clean development environment on a separate machine (iMac) and clone the repository.",
+          "status": "Pending"
+        },
+        {
+          "id": "task_007",
+          "description": "Prism: Initialize npm and install Tailwind CSS, PostCSS, and Autoprefixer.",
+          "status": "Pending"
+        },
+        {
+          "id": "task_008",
+          "description": "Prism: Create and configure `tailwind.config.js` and `postcss.config.js`.",
+          "status": "Pending"
+        },
+        {
+          "id": "task_009",
+          "description": "Prism: Add a build script to `package.json` to compile a production-ready CSS file.",
+          "status": "Pending"
+        },
+        {
+          "id": "task_010",
+          "description": "Prism: Replace the Tailwind CDN script in `index.html` with the compiled CSS file.",
+          "status": "Pending"
+        },
+        {
+          "id": "task_011",
+          "description": "Future Goal: Migrate the project to Next.js for enhanced performance and features.",
+          "status": "Planned"
+        }
       ]
     }
   ]
