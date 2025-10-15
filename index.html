@@ -90,106 +90,68 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "ElectronicsStore",
       "name": "Dash Fixes",
       "url": "https://www.dashfixes.com",
       "telephone": "+1-626-622-0196",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "web@dashfixes.com",
-        "contactType": "Customer Service",
-        "areaServed": "US"
+        "contactType": "Customer Service"
       },
       "image": "https://www.dashfixes.com/graphics/hero-image.jpg",
-      "description": "Expert and affordable repairs for cell phones, laptops, and tablets for students. Offering local service in Pasadena, CA and a nationwide mail-in repair option.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Pasadena",
-        "addressRegion": "CA",
-        "addressCountry": "US"
-      },
-      "sameAs": [
-        "https://www.yelp.com/biz/dash-fixes-pasadena",
-        "https://www.instagram.com/dash.fixes/",
-        "https://www.facebook.com/profile.php?id=61580755575702",
-        "https://www.youtube.com/@DashFixes",
-        "https://www.tiktok.com/@dashfixes",
-        "https://wa.me/16266220196"
+      "description": "Dash Fixes provides expert and affordable electronics repair for phones, laptops, and game consoles. Specializing in on-campus service for students and staff at PCC and Caltech in Pasadena, CA, and offering nationwide mail-in repairs.",
+      "knowsAbout": [
+        "iPhone Repair",
+        "Google Pixel Repair",
+        "Samsung Galaxy Repair",
+        "Laptop Repair",
+        "MacBook Repair",
+        "Game Console Repair",
+        "Data Recovery",
+        "Electronics Repair"
       ],
       "areaServed": [
         {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": "34.1478",
-            "longitude": "-118.1445"
-          },
-          "geoRadius": "30000" 
+          "@type": "City",
+          "name": "Pasadena"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Pasadena City College (PCC)"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "California Institute of Technology (Caltech)"
         },
         {
           "@type": "Country",
           "name": "United States"
         }
       ],
-      "potentialAction": {
-        "@type": "ReserveAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.dashfixes.com/#contact",
-          "inLanguage": "en-US",
-          "actionPlatform": [
-            "http://schema.org/DesktopWebPlatform",
-            "http://schema.org/IOSPlatform",
-            "http://schema.org/AndroidPlatform"
-          ]
-        },
-        "result": {
-          "@type": "Reservation",
-          "name": "Get a Free Quote"
-        }
-      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Repair Services",
         "itemListElement": [
           {
             "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Phone Screen Replacement" },
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": "49.00", "priceCurrency": "USD" }
+            "itemOffered": { "@type": "Service", "name": "Phone Screen Replacement" }
           },
           {
             "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Phone Battery Replacement" },
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": "49.00", "priceCurrency": "USD" }
+            "itemOffered": { "@type": "Service", "name": "Phone Battery Replacement" }
           },
           {
             "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Phone Back Glass Repair" },
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": "79.00", "priceCurrency": "USD" }
+            "itemOffered": { "@type": "Service", "name": "Laptop Screen Replacement" }
           },
           {
             "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Phone Data Recovery" },
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": "99.00", "priceCurrency": "USD" }
+            "itemOffered": { "@type": "Service", "name": "Data Recovery" }
           },
           {
             "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Laptop Screen Replacement" },
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": "129.00", "priceCurrency": "USD" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Laptop SSD Upgrade" },
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": "99.00", "priceCurrency": "USD" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Tablet Screen Repair" },
-            "priceSpecification": { "@type": "PriceSpecification", "minPrice": "69.00", "priceCurrency": "USD" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Mail-in Repair", "areaServed": { "@type": "Country", "name": "United States" } }
+            "itemOffered": { "@type": "Service", "name": "Mail-in Repair" }
           }
         ]
       },
@@ -221,7 +183,15 @@
             }
           }
         ]
-      }
+      },
+      "sameAs": [
+        "https://www.yelp.com/biz/dash-fixes-pasadena",
+        "https://www.instagram.com/dash.fixes/",
+        "https://www.facebook.com/profile.php?id=61580755575702",
+        "https://www.youtube.com/@DashFixes",
+        "https://www.tiktok.com/@dashfixes",
+        "https://wa.me/16266220196"
+      ]
     }
     </script>
     <!-- Google tag (gtag.js) -->
@@ -248,10 +218,11 @@
                     </h1>
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#services" class="font-medium hover:text-solarized-blue transition">Services</a>
-                    <a href="#pricing" class="font-medium hover:text-solarized-blue transition">Pricing</a>
+                    <a href="about.html" class="font-medium hover:text-solarized-blue transition">About</a>
+                    <a href="services.html" class="font-medium hover:text-solarized-blue transition">Services</a>
                     <a href="mail-in-repair.html" class="font-medium hover:text-solarized-blue transition">Mail-In Repair</a>
-                    <a href="#testimonials" class="font-medium hover:text-solarized-blue transition">Testimonials</a>
+                    <a href="faq.html" class="font-medium hover:text-solarized-blue transition">FAQ</a>
+                    <a href="donate.html" class="font-medium hover:text-solarized-blue transition">Donate</a>
                     <a href="#contact" class="font-medium hover:text-solarized-blue transition">Contact</a>
                 </nav>
                 <div class="flex items-center space-x-4">
@@ -276,10 +247,11 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Services</a>
-                <a href="#pricing" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Pricing</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">About</a>
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Services</a>
                 <a href="mail-in-repair.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Mail-In Repair</a>
-                <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Testimonials</a>
+                <a href="faq.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">FAQ</a>
+                <a href="donate.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Donate</a>
                 <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Contact</a>
             </div>
         </div>
@@ -293,7 +265,7 @@
                         <span class="gradient-text">Done Right</span> 🚀
                     </h2>
                     <p class="text-lg md:text-xl text-solarized-dark3 mb-8">
-                        Your local tech lifeline for phones, laptops, and tablets. We proudly serve students, staff, and the general public with convenient pick-up and drop-off service on campus. Get fast, reliable repairs at prices that make sense. 📱💻
+                        Your local tech lifeline for phones, laptops, and tablets. We proudly serve students and staff at <strong>Pasadena City College (PCC)</strong> and <strong>Caltech</strong>, offering convenient on-campus pickup and drop-off service. Get fast, reliable repairs at prices that make sense. 📱💻
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="#contact" class="px-6 py-3 bg-solarized-blue text-solarized-light rounded-lg font-medium text-center hover:bg-opacity-90 transition">
@@ -334,7 +306,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="max-w-2xl mx-auto mt-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="max-w-4xl mx-auto mt-12 grid md:grid-cols-2 gap-12 items-start" data-aos="fade-up" data-aos-delay="100">
                     <form id="contact-form" class="space-y-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Name</label>
@@ -344,9 +316,37 @@
                             <label for="email" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Email</label>
                             <input type="email" name="_replyto" id="email" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition">
                         </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="device-type" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Device Type</label>
+                                <select id="device-type" name="device-type" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition">
+                                    <option value="" disabled selected>Select your device</option>
+                                    <option value="iPhone">iPhone</option>
+                                    <option value="Google Pixel">Google Pixel</option>
+                                    <option value="Samsung Galaxy">Samsung Galaxy</option>
+                                    <option value="Tablet / iPad">Tablet / iPad</option>
+                                    <option value="Laptop">Laptop</option>
+                                    <option value="Game Console">Game Console</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="service-type" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Service Needed</label>
+                                <select id="service-type" name="service-type" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition">
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="Screen Repair">Screen Repair</option>
+                                    <option value="Battery Replacement">Battery Replacement</option>
+                                    <option value="Charging Port">Charging Port Issue</option>
+                                    <option value="Data Recovery">Data Recovery</option>
+                                    <option value="Water Damage">Water Damage</option>
+                                    <option value="Diagnostics">Diagnostics / Not Sure</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">What's Wrong?</label>
-                            <textarea name="message" id="message" rows="4" required class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition"></textarea>
+                            <label for="message" class="block text-sm font-medium text-solarized-dark3 dark:text-solarized-light3 mb-2">Describe the Issue</label>
+                            <textarea name="message" id="message" rows="4" required placeholder="Please provide the model of your device (e.g., iPhone 14 Pro) and any other details about the problem." class="block w-full px-4 py-3 rounded-lg bg-solarized-light2 dark:bg-solarized-dark2 border border-solarized-light3 dark:border-solarized-dark3 focus:ring-solarized-blue focus:border-solarized-blue transition"></textarea>
                         </div>
                         <div>
                             <button type="submit" class="w-full px-6 py-3 bg-solarized-blue text-solarized-light rounded-lg font-medium text-center hover:bg-opacity-90 transition">
@@ -354,7 +354,40 @@
                             </button>
                         </div>
                     </form>
-                    <div id="form-status" class="mt-6 text-center font-medium"></div>
+                    <div class="pt-8 md:pt-0">
+                        <h3 class="text-2xl font-heading font-bold mb-4">Why Get a Quote?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-solarized-green mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold">100% Free & No-Obligation</h4>
+                                    <p class="text-solarized-dark3">Our quotes are always free. There's no commitment to proceed with a repair.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-bolt text-solarized-green mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold">Fast & Honest Responses</h4>
+                                    <p class="text-solarized-dark3">We'll get back to you within a few business hours with a clear, transparent quote.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-user-shield text-solarized-green mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold">Expertise Guaranteed</h4>
+                                    <p class="text-solarized-dark3">Your device will be handled by a passionate expert dedicated to quality work.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-lock text-solarized-green mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold">Your Privacy is Our Priority</h4>
+                                    <p class="text-solarized-dark3">We respect your privacy and will never share your information with anyone.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="form-status" class="mt-6 text-center font-medium md:col-span-2"></div>
                 </div>
             </div>
         </section>

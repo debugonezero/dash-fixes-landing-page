@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your specialist for Google Pixel repair in Pasadena. We handle screen repairs, battery replacements, and other common Pixel issues.">
+    <title>Google Pixel Repair | Dash Fixes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        solarized: {
+                            dark: '#002b36',
+                            dark2: '#073642',
+                            dark3: '#586e75',
+                            light: '#fdf6e3',
+                            light2: '#eee8d5',
+                            light3: '#93a1a1',
+                            yellow: '#b58900',
+                            orange: '#cb4b16',
+                            red: '#dc322f',
+                            magenta: '#d33682',
+                            violet: '#6c71c4',
+                            blue: '#268bd2',
+                            cyan: '#2aa198',
+                            green: '#859900'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            @supports (backdrop-filter: blur(10px)) {
+                backdrop-filter: blur(10px);
+            }
+        }
+    </style>
+</head>
+<body class="light bg-solarized-light text-solarized-dark3 font-sans transition-colors duration-300">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="py-6 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <div class="w-10 h-10 rounded-full bg-solarized-blue flex items-center justify-center">
+                            <i class="fa-solid fa-wrench text-solarized-light"></i>
+                        </div>
+                        <p class="text-2xl font-heading font-bold">
+                            <span class="gradient-text">Dash Fixes</span>
+                        </p>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="about.html" class="font-medium hover:text-solarized-blue transition">About</a>
+                    <a href="services.html" class="font-medium text-solarized-blue transition">Services</a>
+                    <a href="mail-in-repair.html" class="font-medium hover:text-solarized-blue transition">Mail-In Repair</a>
+                    <a href="faq.html" class="font-medium hover:text-solarized-blue transition">FAQ</a>
+                    <a href="donate.html" class="font-medium hover:text-solarized-blue transition">Donate</a>
+                    <a href="contact.html" class="font-medium hover:text-solarized-blue transition">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="tel:626-622-0196" class="hidden md:flex items-center font-medium hover:text-solarized-blue transition">
+                        <i class="fa-solid fa-phone w-4 h-4 mr-2"></i>
+                        (626) 622-0196
+                    </a>
+                    <button id="mobileMenuButton" aria-label="Open navigation menu" class="md:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <a href="contact.html" class="hidden md:block px-4 py-2 bg-solarized-blue text-solarized-light rounded-lg font-medium hover:bg-opacity-90 transition">
+                        Get Help Now
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">About</a>
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium bg-solarized-light2 dark:bg-solarized-dark2 transition">Services</a>
+                <a href="mail-in-repair.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Mail-In Repair</a>
+                <a href="faq.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">FAQ</a>
+                <a href="donate.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Donate</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Contact</a>
+            </div>
+        </div>
+
+        <!-- Google Pixel Repairs Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4">Google Pixel Repair in Pasadena</h1>
+                    <p class="text-lg max-w-3xl mx-auto">As a Google Pixel specialist in Pasadena, we handle all common issues for Pixel devices, from the newest Pixel 8 Pro to older models. If you're near PCC or Caltech and have a broken screen or a battery that won't charge, we can help.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
+                        <h3 class="text-xl font-heading font-bold mb-3">Pixel Screen Repair</h3>
+                        <p class="text-solarized-dark3 mb-4">Cracked or blacked-out screen? We use high-quality parts to restore your Pixel's vibrant display and touch functionality.</p>
+                        <a href="contact.html" class="font-medium text-solarized-blue hover:underline">Get a Quote &rarr;</a>
+                    </div>
+                    <div class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
+                        <h3 class="text-xl font-heading font-bold mb-3">Pixel Battery Replacement</h3>
+                        <p class="text-solarized-dark3 mb-4">Is your Pixel dying too fast or shutting down unexpectedly? A new battery will bring back its all-day performance.</p>
+                        <a href="contact.html" class="font-medium text-solarized-blue hover:underline">Get a Quote &rarr;</a>
+                    </div>
+                    <div class="service-card bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md transition duration-300">
+                        <h3 class="text-xl font-heading font-bold mb-3">Charging Port Issues</h3>
+                        <p class="text-solarized-dark3 mb-4">If your Google Pixel isn't charging correctly, we can professionally clean, repair, or replace the USB-C port.</p>
+                        <a href="contact.html" class="font-medium text-solarized-blue hover:underline">Get a Quote &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-solarized-light2 dark:bg-solarized-dark2">
+            <div class="max-w-7xl mx-auto text-center text-solarized-dark3 dark:text-solarized-light3">
+                <p>&copy; 2025 Dash Fixes | Crafted with love <span style="color: var(--action-orange);">&#10084;&#65039;</span> by your local Tech Alchemist! &#129514;</p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="https://www.yelp.com/biz/dash-fixes-pasadena" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our Yelp page">
+                        <i class="fa-brands fa-yelp w-6 h-6"></i>
+                    </a>
+                    <a href="https://wa.me/16266220196" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Contact us on WhatsApp">
+                        <i class="fa-brands fa-whatsapp w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@dashfixes" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our TikTok page">
+                        <i class="fa-brands fa-tiktok w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@DashFixes" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our YouTube channel">
+                        <i class="fa-brands fa-youtube w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dash.fixes/" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our Instagram page">
+                        <i class="fa-brands fa-instagram w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61580755575702" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our Facebook page">
+                        <i class="fa-brands fa-facebook w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // AOS initialization
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

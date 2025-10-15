@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about Dash Fixes' device repair services in Pasadena.">
+    <title>FAQ | Dash Fixes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        solarized: {
+                            dark: '#002b36',
+                            dark2: '#073642',
+                            dark3: '#586e75',
+                            light: '#fdf6e3',
+                            light2: '#eee8d5',
+                            light3: '#93a1a1',
+                            yellow: '#b58900',
+                            orange: '#cb4b16',
+                            red: '#dc322f',
+                            magenta: '#d33682',
+                            violet: '#6c71c4',
+                            blue: '#268bd2',
+                            cyan: '#2aa198',
+                            green: '#859900'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            @supports (backdrop-filter: blur(10px)) {
+                backdrop-filter: blur(10px);
+            }
+        }
+    </style>
+</head>
+<body class="light bg-solarized-light text-solarized-dark3 font-sans transition-colors duration-300">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="py-6 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <div class="w-10 h-10 rounded-full bg-solarized-blue flex items-center justify-center">
+                            <i class="fa-solid fa-wrench text-solarized-light"></i>
+                        </div>
+                        <p class="text-2xl font-heading font-bold">
+                            <span class="gradient-text">Dash Fixes</span>
+                        </p>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="about.html" class="font-medium hover:text-solarized-blue transition">About</a>
+                    <a href="services.html" class="font-medium hover:text-solarized-blue transition">Services</a>
+                    <a href="mail-in-repair.html" class="font-medium hover:text-solarized-blue transition">Mail-In Repair</a>
+                    <a href="faq.html" class="font-medium text-solarized-blue transition">FAQ</a>
+                    <a href="donate.html" class="font-medium hover:text-solarized-blue transition">Donate</a>
+                    <a href="contact.html" class="font-medium hover:text-solarized-blue transition">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="tel:626-622-0196" class="hidden md:flex items-center font-medium hover:text-solarized-blue transition">
+                        <i class="fa-solid fa-phone w-4 h-4 mr-2"></i>
+                        (626) 622-0196
+                    </a>
+                    <button id="mobileMenuButton" aria-label="Open navigation menu" class="md:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <a href="contact.html" class="hidden md:block px-4 py-2 bg-solarized-blue text-solarized-light rounded-lg font-medium hover:bg-opacity-90 transition">
+                        Get Help Now
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">About</a>
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Services</a>
+                <a href="mail-in-repair.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Mail-In Repair</a>
+                <a href="faq.html" class="block px-3 py-2 rounded-md text-base font-medium bg-solarized-light2 dark:bg-solarized-dark2 transition">FAQ</a>
+                <a href="donate.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Donate</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-solarized-light2 dark:hover:bg-solarized-dark2 transition">Contact</a>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4">Frequently Asked Questions</h1>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-heading font-bold mb-2">What kind of parts do you use for batteries, charging ports, and back glass?</h3>
+                        <p class="text-solarized-dark3 dark:text-solarized-light3">We have a strict quality-first policy. For critical components like batteries and charging ports, we <strong>only</strong> use high-quality <strong>Aftermarket Premium</strong> or <strong>Genuine</strong> parts. We never use generic, low-quality alternatives, as they lead to high failure rates and a bad customer experience. For back glass, we <strong>only</strong> use Genuine parts to ensure a perfect fit, durability, and water resistance.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-heading font-bold mb-2">Why do you replace the whole back housing on some iPhone models?</h3>
+                        <p class="text-solarized-dark3 dark:text-solarized-light3">For iPhone models before the iPhone 14 (non-Pro), replacing only the back glass with a third-party part can compromise the device's structural integrity and water resistance. To guarantee a factory-quality repair, we replace the entire back housing with a Genuine unit. This ensures the repair is durable and maintains the original feel and resistance of the device.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-heading font-bold mb-2">What about parts for MacBooks?</h3>
+                        <p class="text-solarized-dark3 dark:text-solarized-light3">Our commitment to quality extends to all Apple products. We use specific, high-quality parts for each type of MacBook repair:<br>
+                            - <strong>Screens:</strong> We use Genuine, Refurbished, or Premium quality displays to ensure a perfect picture.<br>
+                            - <strong>Batteries:</strong> We use either Genuine or high-quality Premium batteries for longevity and safety.<br>
+                            - <strong>Keyboards & Trackpads:</strong> For these critical components, we <strong>only</strong> use Genuine parts to guarantee a perfect fit, feel, and long-term reliability.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-heading font-bold mb-2">What payment methods do you accept?</h3>
+                        <p class="text-solarized-dark3 dark:text-solarized-light3">We accept a variety of payment methods for your convenience, including <strong>Credit/Debit Cards, Apple Pay, Google Pay, and Venmo</strong>. All card payments are processed securely through Square.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-heading font-bold mb-2">What payment methods do you accept?</h3>
+                        <p class="text-solarized-dark3 dark:text-solarized-light3">We accept a variety of payment methods for your convenience, including <strong>Credit/Debit Cards, Apple Pay, Google Pay, and Venmo</strong>. All card payments are processed securely through Square.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8 bg-solarized-light2 dark:bg-solarized-dark2">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">What Our Customers Say ⭐</h2>
+                    <p class="text-lg max-w-2xl mx-auto">We're proud of our 5-star service.</p>
+                </div>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md">
+                        <p class="text-lg italic text-solarized-dark3 mb-6">"Came to get my Galaxy S6 Lite screen replaced. He found the piece for $35 and charged $65 for the labor. I recommend their services if you're in need."</p>
+                        <div class="text-right font-medium">
+                            - David C.
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-solarized-light dark:bg-solarized-dark rounded-xl p-8 shadow-md">
+                        <p class="text-lg italic text-solarized-dark3 mb-6">"Amazing service provider! If you want the job done right and quickly by a professional, this is it! Technicians know how to quickly identify all types of problems and can resolve all issues related to tech! Have been using them for all tech related issues for a long time!"</p>
+                        <div class="text-right font-medium">
+                            - Martin N.
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="https://www.yelp.com/biz/dash-fixes-pasadena" target="_blank" rel="noopener noreferrer" class="px-6 py-3 border border-solarized-blue text-solarized-blue rounded-lg font-medium text-center hover:bg-solarized-blue hover:bg-opacity-10 transition">
+                        Read More Reviews on Yelp <i class="fa-solid fa-external-link-alt inline ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-solarized-light2 dark:bg-solarized-dark2">
+            <div class="max-w-7xl mx-auto text-center text-solarized-dark3 dark:text-solarized-light3">
+                <p>&copy; 2025 Dash Fixes | Crafted with love <span style="color: var(--action-orange);">&#10084;&#65039;</span> by your local Tech Alchemist! &#129514;</p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <a href="https://www.yelp.com/biz/dash-fixes-pasadena" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our Yelp page">
+                        <i class="fa-brands fa-yelp w-6 h-6"></i>
+                    </a>
+                    <a href="https://wa.me/16266220196" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Contact us on WhatsApp">
+                        <i class="fa-brands fa-whatsapp w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@dashfixes" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our TikTok page">
+                        <i class="fa-brands fa-tiktok w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@DashFixes" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our YouTube channel">
+                        <i class="fa-brands fa-youtube w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dash.fixes/" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our Instagram page">
+                        <i class="fa-brands fa-instagram w-6 h-6"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61580755575702" target="_blank" rel="noopener noreferrer" class="hover:text-solarized-blue" aria-label="Visit our Facebook page">
+                        <i class="fa-brands fa-facebook w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // AOS initialization
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
