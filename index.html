@@ -51,40 +51,9 @@
             position: sticky;
             top: 0;
             z-index: 50;
-            /* Add a subtle background blur for modern browsers */
             @supports (backdrop-filter: blur(10px)) {
                 backdrop-filter: blur(10px);
             }
-        }
-        .theme-toggle {
-            transition: all 0.3s ease;
-        }
-        .dark .theme-toggle {
-            background-color: #073642;
-            color: #eee8d5;
-        }
-        .light .theme-toggle {
-            background-color: #eee8d5;
-            color: #073642;
-        }
-        .gradient-text {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(45deg, #268bd2, #2aa198);
-        }
-        .hero-bg {
-            background: radial-gradient(circle at 10% 20%, rgba(38, 139, 210, 0.1) 0%, rgba(253, 246, 227, 0) 50%);
-        }
-        .dark .hero-bg {
-            background: radial-gradient(circle at 10% 20%, rgba(38, 139, 210, 0.2) 0%, rgba(0, 43, 54, 0) 50%);
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        .dark .service-card:hover {
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
         }
     </style>
     <script type="application/ld+json">
@@ -93,24 +62,7 @@
       "@type": "ElectronicsStore",
       "name": "Dash Fixes",
       "url": "https://www.dashfixes.com",
-      "telephone": "+1-626-622-0196",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "web@dashfixes.com",
-        "contactType": "Customer Service"
-      },
-      "image": "https://www.dashfixes.com/graphics/hero-image.jpg",
       "description": "Dash Fixes provides expert and affordable nationwide mail-in electronics repair for phones, laptops, and game consoles.",
-      "knowsAbout": [
-        "iPhone Repair",
-        "Google Pixel Repair",
-        "Samsung Galaxy Repair",
-        "Laptop Repair",
-        "MacBook Repair",
-        "Game Console Repair",
-        "Data Recovery",
-        "Electronics Repair"
-      ],
       "areaServed": {
         "@type": "Country",
         "name": "United States"
@@ -119,78 +71,12 @@
         "@type": "OfferCatalog",
         "name": "Repair Services",
         "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Phone Screen Replacement" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Phone Battery Replacement" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Laptop Screen Replacement" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Data Recovery" }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": { "@type": "Service", "name": "Mail-in Repair" }
-          }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "iPhone Repair" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Laptop Repair" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Game Console Repair" } }
         ]
-      },
-      "sameAs": [
-        "https://www.yelp.com/biz/dash-fixes-pasadena",
-        "https://www.instagram.com/dash.fixes/",
-        "https://www.facebook.com/profile.php?id=61580755575702",
-        "https://www.youtube.com/@DashFixes",
-        "https://www.tiktok.com/@dashfixes",
-        "https://wa.me/16266220196"
-      ]
+      }
     }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What kind of parts do you use for batteries, charging ports, and back glass?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We have a strict quality-first policy. For critical components like batteries and charging ports, we only use high-quality Aftermarket Premium or Genuine parts. We never use generic, low-quality alternatives, as they lead to high failure rates and a bad customer experience. For back glass, we only use Genuine parts to ensure a perfect fit, durability, and water resistance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why do you replace the whole back housing on some iPhone models?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For iPhone models before the iPhone 14 (non-Pro), replacing only the back glass with a third-party part can compromise the device's structural integrity and water resistance. To guarantee a factory-quality repair, we replace the entire back housing with a Genuine unit. This ensures the repair is durable and maintains the original feel and resistance of the device."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What about parts for MacBooks?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our commitment to quality extends to all Apple products. We use specific, high-quality parts for each type of MacBook repair: Screens (Genuine, Refurbished, or Premium), Batteries (Genuine or Premium), and for Keyboards & Trackpads, we only use Genuine parts to guarantee a perfect fit, feel, and long-term reliability."
-          }
-        }
-      ]
-    }
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTJ1VLTLF2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-WTJ1VLTLF2');
     </script>
 </head>
 <body class="light bg-solarized-light text-solarized-dark3 font-sans transition-colors duration-300">
@@ -219,10 +105,6 @@
                         <i class="fa-solid fa-phone w-4 h-4 mr-2"></i>
                         (626) 622-0196
                     </a>
-                    <!-- <button id="themeToggle" aria-label="Toggle theme" class="theme-toggle w-10 h-10 rounded-full flex items-center justify-center">
-                        <i class="fa-solid fa-sun hidden dark:block"></i>
-                        <i class="fa-solid fa-moon block dark:hidden"></i>
-                    </button> -->
                     <button id="mobileMenuButton" aria-label="Open navigation menu" class="md:hidden">
                         <i class="fa-solid fa-bars"></i>
                     </button>
@@ -250,18 +132,15 @@
             <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6">
-                        Pasadena's Expert <br>
-                        <span class="gradient-text">Tech Repair</span> 🚀
+                        Expert Tech Repair.<br>
+                        <span class="gradient-text">Shipped From Your Door.</span>
                     </h1>
                     <p class="text-lg md:text-xl text-solarized-dark3 mb-8">
-                        Your local tech lifeline for phones, laptops, and tablets. We serve the entire Pasadena community, offering convenient pick-up and drop-off service, with special availability for students and staff at <strong>Pasadena City College (PCC)</strong> and <strong>Caltech</strong>.
+                        Your device is essential. Our mail-in repair service makes getting it fixed simple. We'll send you a free, pre-paid shipping label. Just pack your device and drop it off. We handle the rest.
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#contact" class="px-6 py-3 bg-solarized-blue text-solarized-light rounded-lg font-medium text-center hover:bg-opacity-90 transition">
-                            Book a Repair <i class="fa-solid fa-calendar-check inline ml-2"></i>
-                        </a>
-                        <a href="#services" class="px-6 py-3 border border-solarized-blue text-solarized-blue rounded-lg font-medium text-center hover:bg-solarized-blue hover:bg-opacity-10 transition">
-                            Our Services <i class="fa-solid fa-arrow-right inline ml-2"></i>
+                        <a href="#contact" class="px-8 py-4 bg-solarized-blue text-solarized-light rounded-lg font-semibold text-lg text-center hover:bg-opacity-90 transition">
+                            GET YOUR FREE SHIPPING LABEL
                         </a>
                     </div>
                 </div>
